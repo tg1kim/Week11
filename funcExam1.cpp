@@ -2,15 +2,14 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-void printStars()
+printStars
 {
-	for (int i = 0; i < 30; i++)
-		putchar('*');
+	*를 30번 출력
 }
 
 void main()
 {
-	printStars();
-	printf("\nHello World!\n");
-	printStars();
+	함수 printStars를 호출
+	"\nHello World!\n"
+	함수 printStars를 호출
 }

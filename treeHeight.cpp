@@ -5,17 +5,16 @@
 
 void main()
 {
-	float height, distance, tree_height, degrees, radians;
-	printf("나무와의 길이(단위는 미터): ");
-	scanf("%f", &distance);
+	"나무와의 길이(단위는 미터): "
+	distance에 입력
 
-	printf("측정자의 키(단위는 미터): ");
-	scanf("%f", &height);
+	"측정자의 키(단위는 미터): "
+	height에 입력
 
-	printf("각도(단위는 도): ");
-	scanf("%f", &degrees);
+	"각도(단위는 도): "
+	degrees에 입력
 
-	radians = degrees * 3.141592 / 180.0;
-	tree_height = tan(radians) * distance + height;
-	printf("나무의 높이(단위는 미터): %f\n", tree_height);
+	radians = ?
+	treeHeight = ?
+	"나무의 높이(단위는 미터): %lf\n"
 }

@@ -2,23 +2,22 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-int getInteger()
+getInteger
 {
-	int value;
-	printf("정수를 입력하시오: ");
-	scanf("%d", &value);
-	return value;
+	"정수를 입력하시오: "
+	value에 입력
+	value를 반환한다
 }
 
-int add(int x, int y)
+두 수를 더 하는 함수 add
 {
-	return x + y;
+	두 수의 합을 반환한다
 }
 
 void main() 
 {
-	int x = getInteger();
-	int y = getInteger();
-	int sum = add(x, y);
-	printf("두수의 합은 %d입니다.\n", sum);
+	x에 getInteger가 반환한 값을 저장한다
+	y에 getInteger가 반환한 값을 저장한다
+	sum에 함수 add가 반환한 값을 저장한다
+	"두수의 합은 %d입니다.\n"
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>	// 입출력 없음에도
 
 #pragma warning(disable: 4996 4326 6031)
 

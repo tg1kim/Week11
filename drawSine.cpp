@@ -5,22 +5,20 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-double radian(double degree)
+radian 매개변수 degree
 {
-        return PI * degree / 180.0;
 }
 
-void drawBar(int height)
+drawBar 매개변수 height
 {
-        for (int i = 0; i < height; i++)
-                putchat('*');
-        printf('\n');
+        height번 반복
+                '*'
+        '\n'
 }
 
 void main() 
 {
-        for (int degree = 0; degree <= 90; degree += 10) {
-                int y = (int)(60 * sin(radian(degree)) + 0.5);
-                drawBar(y);
-        }
+        0~90 10 간격
+                y에 sin 값을 60배 증폭
+                drawBar를 호출
 }

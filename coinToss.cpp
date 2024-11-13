@@ -6,26 +6,13 @@
 
 void main() 
 {
-    int toss;
-    int heads = 0;
-    int tails = 0;
-    srand((unsigned)time(NULL)); 
-    for (toss = 0; toss < 100; toss++) {
-	int coinToss(void);
-        if (coinToss( ) == 1)
-            heads++;
-        else
-            tails++;
-    }
-    printf( "동전의 앞면: %d \n", heads );
-    printf( "동전의 뒷면: %d \n", tails );
+	씨앗으로 현재 시간 사용
+	100번 반복
+		동전을 던져 heads/tails 저장
+	"동전의 앞면: %d\n"
+	"동전의 뒷면: %d\n"
 }
 
-int coinToss(void)
+coinToss
 {
-    int i = rand() % 2;
-    if (i == 0)
-        return 0;
-    else
-        return 1;
 }

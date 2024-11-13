@@ -5,7 +5,7 @@
 
 void main()
 {
-	for (int i = 0; i < 6; i++)
-		printf("%d ", rand());
-	putchar('\n');
+	6번 반복
+		"%d ", 난수 발생
+	'\n'
 }

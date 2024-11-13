@@ -2,7 +2,7 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-void happyBirthday()
+함수 happyBirthday를 정의
 {
 	printf("생일축하 합니다!\n");
 	printf("생일축하 합니다!\n");
@@ -12,5 +12,5 @@ void happyBirthday()
 
 void main()
 {
-	happyBirthday();
+	함수 happyBirthday를 호출
 }

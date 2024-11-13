@@ -6,8 +6,8 @@
 void main()
 {
 	double result, value = 1.6;
-	result = floor(value);		// result는 1.0이다. 
-	printf("%f ", result);
-	result = ceil(value);		// result는 2.0이다. 
-	printf("%f ", result);
+	result = floor를 호출		// result는 1.0이다. 
+	"%f "
+	result = ceil을 호출		// result는 2.0이다. 
+	"%f "
 }

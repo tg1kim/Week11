@@ -2,20 +2,16 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-int max(int x, int y)
+함수 max 정의
 {
-	if (x > y)
-		return x;
-	else
-		return y;
+	큰 수
 }
 
 
 void main()
 {
-	int x, y, larger;
-	printf("정수 2개를 입력하시오: ");
-	scanf("%d %d", &x, &y);
-	larger = max(x, y);
-	printf("더 큰값은 %d입니다.\n", larger);
+	"정수 2개를 입력하시오: "
+	x, y에 입력
+	larger = ?
+	"더 큰값은 %d입니다.\n"
 }

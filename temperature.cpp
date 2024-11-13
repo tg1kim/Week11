@@ -2,42 +2,37 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-void printMenu()
+printMenu
 {
-	printf("c: 섭씨온도에서 화씨온도로 변환\n");
-	printf("f: 화씨온도에서 섭씨온도로 변환\n");
-	printf("q: 종료\n");
+	"c: 섭씨온도에서 화씨온도로 변환\n"
+	"f: 화씨온도에서 섭씨온도로 변환\n"
+	"q: 종료\n"
 }
 
-double Cels2Fahren(double c_temp)
+Celsi2Fahren
 {
-	return 9.0 / 5.0 * c_temp + 32;
 }
 
-double Fahren2Celsi(double f_temp)
+Fahren2Celsi
 {
-	return (f_temp - 32.0) * 5.0 / 9.0;
 }
 
 void main()
 {
-	char choice;
-	double temp;
 	while (1) {
-		printMenu();
-		printf("메뉴에서 선택하세요.");
-		scanf(" %c", &choice);
-		if (choice == 'q')
+		메뉴 출력
+		"메뉴에서 선택하세요."
+		choice에 입력
+		q인 경우
 			break;
-		else if (choice == 'c') {
-			printf("섭씨온도: ");
-			scanf("%lf", &temp);
-			printf("화씨온도: %.1f\n", Celsi2Fahren(temp));
-		}
-		else if (choice == 'f') {
-			printf("화씨온도: ");
-			scanf("%lf", &temp);
-			printf("섭씨온도: %.1f\n", Fahren2Celsi(temp));
+		c인 경우
+			"섭씨온도: "
+			temp에 입력
+			"화씨온도: %f\n"
+		f인 경우
+			"화씨온도: ");
+			temp에 입력
+			"섭씨온도: %f\n"
 		}
 	}
 }

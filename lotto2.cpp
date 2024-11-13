@@ -9,8 +9,7 @@
 
 void main()
 {
-	srand((unsigned)time(NULL));
-	for (int i = 0; i < 6; i++)
-		printf("%d ", rand() % MAX + 1);
-	putchar('\n');
+	씨앗을 현재 시간을 사용
+	6번 반복
+		"%d ", 1~45 난수
 }

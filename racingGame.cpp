@@ -6,24 +6,23 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-void displayCar(int carNumber, int distance)
+displayCar 매개변수 carNumber, distance
 {
-	printf("CAR #%d:", carNumber);
-	for (int i = 0; i < distance / 10; i++) 
-		putchar('*');
-	putchar('\n');
+	"CAR #%d:"
+	(distance / 10)번 반복
+		'*'
+	'\n'
 }
 
 void main()
 {
-	int car1Dist = 0, car2Dist = 0;
-	srand((unsigned)time(NULL));
-	for (int i = 0; i < 20; i++) {
+	현재 시간으로 씨앗 설정
+	20번 반복
 		system("cls");
-		car1Dist += rand() % 100; 
-		car2Dist += rand() % 100; 
-		displayCar(1, car1Dist);
-		displayCar(2, car2Dist);
+		car1Dist += 0~99 난수 발생
+		car2Dist += 0~99 난수 발생
+		displayCar 인수 1, car1Dist);
+		displayCar 인수 2, car2Dist);
 		Sleep(1000);
 	}
 }

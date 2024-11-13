@@ -4,14 +4,13 @@
 
 #pragma warning(disable: 4996 4326 6031)
 
-#define PI	3.1415926535
+상수 기호 PI를 3.1415926535로 정의
 
 void main()
 {
-	double x, y;
-	x = PI / 2;
-	y = sin(x);
-	printf("sin(%f) = %f\n", x, y);
-	y = cos(x);
-	printf("cos(%f) = %f\n", x, y);
+	x에 2 분의 PI
+	y에 sin x를 저장
+	"sin(%f) = %f\n"
+	y에 cos x를 저장
+	"cos(%f) = %f\n"
 }

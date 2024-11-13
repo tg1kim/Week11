@@ -20,32 +20,29 @@ void main()
 void factorial()
 {
         long long n, result = 1;
-        printf("정수를 입력하시오: ");
-        scanf("%lld", &n);
-        for (int i = 1; i <= n; i++)        
-                result = result * i;
-        printf("결과 = %lld\n\n", result);
+        "정수를 입력하시오: "
+	???
+        "결과 = %lld\n\n"
 }
 
 void sine()
 {
         double a, result;
-        printf("각도를 입력하시오: ");
-        scanf("%lf", &a);
-        result = sin(a);
-        printf("결과 = %lf\n\n", result);
+        "각도를 입력하시오: "
+        ???
+        "결과 = %lf\n\n", result);
 }
 
 void logBase10()
 {
         double a, result;
-        printf("실수값을 입력하시오: ");
-        scanf("%lf", &a);
-        if (a <= 0.0)        
-                printf("오류\n");
+        "실수값을 입력하시오: "
+        ???
+        if (???)        
+                "오류\n"
         else        {
-                result = log10(a);
-                printf("결과 = %lf\n\n", result);
+                ???
+                "결과 = %lf\n\n"
         }
 }
 
@@ -53,21 +50,13 @@ void main()
 {
         while (1) {
                 switch (menu()) {
-                case 1:
-                        factorial();
-                        break;
-                case 2:
-                        sine();
-                        break;
-                case 3:
-                        logBase10();
-                        break;
-                case 7:
-                        printf("종료합니다.\n");
-                        return 0;
-                default:
-                        printf("잘못된 선택입니다.\n");
-                        break;
+                case 1:	// factorial
+                case 2:	// sine
+                case 3:	// log
+                case 7:	// 종료
+                        "종료합니다.\n"
+                default:	// 선택 오류
+                        "잘못된 선택입니다.\n"
                 }
         }
 }
